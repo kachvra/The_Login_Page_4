@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+body{
+    background-color: rgb(206, 203, 203);
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    background-color: white;
+    width:80%;
+    height: 90vh;
+    position: relative;
+    left: calc(50% - 40%);
+    top: calc(50% - 45vh);
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    overflow: none;
+
+
+    .col1{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        
+
+        .box1{
+            position: relative;
+            height: 90%;
+            width: 90%;
+            background-image: url(https://t4.ftcdn.net/jpg/07/28/67/45/240_F_728674505_7e0J2YvvxzzZaKOlt87T1PaA6TD15LOM.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 30px;
+            top: calc(50% - 45%);
+            left: calc(50% - 45%);
+            
+        }
+    }
+
+
+    .col2{
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        .box2{
+            position: relative;
+            width:90%;
+            height: 90%;
+            left: calc(50% - 45%);
+            top: calc(50% - 45%);
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        .formbox{
+            width: 92%;
+            height: auto; 
+            text-align: center;
+
+            img{
+                width: 105px;
+            }
+
+            h2{
+                font-weight: 650;
+            }
+
+            p{
+                color: grey;
+                font-size: 13px;
+                margin-top: 4px;
+            }
+
+            .holder{
+
+                label{
+                    color:gray;
+                    margin-right: 380px;
+                    font-size: 15px;
+                }
+            
+                .inputholder{
+                    border: 1px solid #e0dddd;
+                    border-radius: 14px;
+                    position: relative;
+                    display: flex;
+                    padding: 7px 10px;
+                    align-items: center;
+                    top: 10px;
+
+                    input{
+                        border: none;
+                        outline: none;
+
+                     &::placeholder{
+                        color: black;
+                        font-weight: 600;
+                    }
+                    }
+
+                   
+
+                }
+            }
+
+            .RP{
+                
+                position: relative;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                font-size: 13px;
+
+                a{
+                    position: absolute;
+                    right: 0;
+                    color: rgb(158, 22, 158);
+                }
+            }
+
+            #lbutton{
+                background-color: rgb(158, 22, 158);
+                width: 100%;
+                padding: 7px 10px;
+                border-radius: 14px;
+                border: none;
+                outline: none;
+                color:white;
+      
+            }
+
+            .horiline{
+
+                position: relative;
+                text-align: center;
+
+                .line{
+                    background-color: #f3f3f3;
+                    height: 1px;
+                    width: 100%;
+                    position: relative;
+
+                }
+
+                span{
+                    background-color:white;
+                    position: absolute;
+                    width: 25%;
+                    left: calc(50% - 12.5%);
+                    padding: 8px;
+                    top: -15px;
+                    font-size: 12px;
+                    color: gray;
+                    
+
+                }
+            }
+
+            #signbutton{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap:7px;
+                padding: 7px 10px;
+                width: 100%;
+                border-radius: 14px;
+                border: none;
+                outline: none;
+                
+                #blackp{
+                color: rgb(0, 0, 0);
+                font-size: 13px;
+                font-weight: 600;
+                }
+
+            
+
+            }
+
+            .footer{
+                position: relative;
+                top: 8px;
+                p{
+                    a{
+                        color: rgb(158, 22, 158);
+                    }
+                }
+            }
+
+
+
+         }   
+            
+        }
+
+       
+
+    }
+
+}
+
+
+@media screen and (max-width:800px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col1{
+        width: 100%;
+    }
+
+    .col2{
+        width: 100%;
+    }
+}
