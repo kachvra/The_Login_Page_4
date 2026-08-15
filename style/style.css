@@ -164,13 +164,9 @@ body {
 
 @media screen and (max-width: 800px) {
   .container {
-    display: flex;
-    flex-direction: column;
+    display: block;
   }
-  .col1 {
-    width: 100%;
-  }
-  .col2 {
-    width: 100%;
+  .container .col1 {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
